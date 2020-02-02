@@ -41,8 +41,8 @@ def matrix_lookup(matrix, row, column)
 end
 
 def matrix_update(matrix, row, column, new_value)
-  matrix[row][column] = new_value
-  matrix
+  matrix[row][column] = new_value #this here returns the updated value not the whole matrix. so u need to return the matrix
+  matrix # you would not return the definition inside itself... just return the matrix so that this def updates the matrix and presents that update
   # Given any matrix (array of arrays), a row index and a column index,
   # Update the matrix location at that row and column to have the value of new_value
   # Return the updated matrix
